@@ -189,6 +189,7 @@ def _call_warden_native(action: str, args: dict, context: dict, request_id: str,
         "params": {
             "shopassist_action": action,
             "customer_id": args.get("customer_id") or context.get("customer_id"),
+            "owner_id": context.get("order_owner"),
             "order_id": args.get("order_id"),
             "amount": args.get("amount"),
             "reason": str(args.get("reason", ""))[:300],

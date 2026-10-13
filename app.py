@@ -48,7 +48,11 @@ st.markdown("""
   div[data-testid="stForm"] { position: sticky; bottom: 0; background: #FFFFFF;
                               padding: 12px 0 6px; z-index: 10; border: 0; }
   div[data-testid="stTextInput"] input { border-radius: 999px !important; border: 1px solid #000000 !important;
-                                         padding: 12px 20px !important; font-size: 0.95rem !important; color: #000000; }
+                                         background-color: #FFFFFF !important; color: #000000 !important;
+                                         -webkit-text-fill-color: #000000 !important; caret-color: #000000 !important;
+                                         padding: 12px 20px !important; font-size: 0.95rem !important; }
+  div[data-testid="stTextInput"] input::placeholder { color: #9CA3AF !important;
+                                                     -webkit-text-fill-color: #9CA3AF !important; }
   div[data-testid="stTextInput"] input:focus { box-shadow: none !important; border-width: 2px !important; }
   div[data-testid="stFormSubmitButton"] > button { border-radius: 50% !important; width: 48px !important;
       height: 48px !important; min-height: 48px !important; padding: 0 !important;

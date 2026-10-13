@@ -132,6 +132,8 @@ def _seed(conn: sqlite3.Connection) -> None:
         ("ORD-1001", "CUST-01", "boAt Airdopes 141 TWS Earbuds", 2499.0, "paid", "delivered", 10, "none", "Sealed pack, working fine."),
         # Outside return window
         ("ORD-1002", "CUST-01", "Samsung Galaxy M35 5G", 16999.0, "paid", "delivered", 60, "none", "No issues reported."),
+        # Demo order for Layer-2 ownership checks (owner: CUST-01)
+        ("ORD-7777", "CUST-01", "Sony WH-1000XM5 Headphones", 4999.0, "paid", "delivered", 3, "none", "Demo order for governance testing."),
         # Not yet shipped -> cancellable
         ("ORD-1003", "CUST-02", "Puma Running Shoes (UK 9)", 3499.0, "paid", "processing", 2, "none", "Warehouse packing in progress."),
         # Already cancelled
